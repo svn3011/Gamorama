@@ -1,0 +1,24 @@
+<%- include('./../partials/header.ejs') %>
+
+<div class="cards-list">
+  <% games.forEach(function(game){ %>
+    <a href="<%= game.url %>"><div class="card 1">
+
+      <% if(currentUser){ %>
+
+      <form id="delete" action="/<%= game._id %>?_method=DELETE" method="POST">
+        <button class="ui red inverted button"><img style="width: 30px;" src="https://c7.uihere.com/files/487/598/507/area-text-symbol-logo-delete-thumb.jpg"></button>
+    </form>
+
+    <% } %>
+      <div class="card_image"> <img src="<%= game.img %>" /> </div>
+      <div id="gname" style="opacity: 0;" class="card_title title-white">
+        <%= game.nam %>
+      </div>
+    </div>
+    </a>
+    <% }) %>
+    
+</div>
+
+<%- include('./../partials/footer.ejs') %>

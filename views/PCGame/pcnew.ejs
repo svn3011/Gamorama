@@ -1,0 +1,56 @@
+<%- include('./../partials/header.ejs') %>
+
+
+<form action="/pcgames" method="POST">
+
+    <div id="game-form">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">Game-URL https://</span>
+            </div>
+            <input name="game[url]" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+          </div>
+
+
+          <br>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Name</span>
+            </div>
+            <input name="game[nam]" type="text" class="form-control" placeholder="Game Name" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <br>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">Image-URL https://</span>
+            </div>
+            <input name="game[img]" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+          </div>
+
+          <br>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Description</span>
+            </div>
+            <textarea name="game[des]" class="form-control" aria-label="With textarea"></textarea>
+          </div>
+
+          <br>
+
+
+          <input type="submit" class="btn btn-success btn-lg btn-block">
+
+    
+    </div>
+
+</form>
+
+
+<%- include('./../partials/footer.ejs') %>

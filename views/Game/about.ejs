@@ -1,0 +1,89 @@
+<%- include('./../partials/header.ejs') %>
+<link rel="stylesheet" href="/stylesheets/about.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	
+<section id="contact">
+  
+    <h1 class="section-header">CONTACT</h1>
+    
+    <div class="contact-wrapper">
+      
+        <!---------------- 
+  
+        CONTACT PAGE LEFT 
+      
+        -----------------> 
+      
+      <form class="form-horizontal" role="form" method="post" action="contact.php">
+         
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+          </div>
+        </div>
+  
+        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+        
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+          <div class="button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          </div>
+        
+        </button>
+        
+      </form>
+      
+        <!---------------- 
+  
+        CONTACT PAGE RIGHT 
+      
+        -----------------> 
+      
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Dhanbad | India</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:91-7804942459" title="Give me a call">+91-7804942459</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto: amarshyo@gmail.com" title="Send me an email">amarshyo@gmail.com</a></span></i></li>
+            
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="http://github.com/mmaj5524" class="contact-icon">
+              <i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="http://twitter.com/amarsh_jain" target="_blank" class="contact-icon">
+              <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/amarshjain/" target="_blank" class="contact-icon">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://www.facebook.com/mmaj007" target="_blank" class="contact-icon">
+              <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+          <hr>
+  
+          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+  
+        </div>
+      
+    </div>
+    
+  </section>  
+    
+    
+    
+    
+
+<%- include('./../partials/footer.ejs') %>

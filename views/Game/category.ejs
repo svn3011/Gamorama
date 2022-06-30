@@ -1,0 +1,19 @@
+<%- include('./../partials/header.ejs') %>
+<% cats.forEach(function(cats){ %>
+
+<div class="cards-list">
+<a href="/<%= cats.name%>">
+    <div class="card 1">
+      <div class="card_image"> <img src=<%=cats.url%> /> </div>
+      <div class="card_title title-white">
+        <p style="color: rgb(180, 22, 22); font-family: cursive;"><%=cats.name%></p>
+      </div>
+    </div>
+<br>
+    </div>
+</a>
+    <% }) %>
+
+
+
+    <%- include('./../partials/footer.ejs') %>

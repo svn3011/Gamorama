@@ -1,0 +1,69 @@
+<%- include('./../partials/header.ejs') %>
+
+
+<form action="/" method="POST">
+
+    <div id="game-form">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">Game-URL https://</span>
+            </div>
+            <input name="game[url]" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+          </div>
+
+
+          <br>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Name</span>
+            </div>
+            <input name="game[nam]" type="text" class="form-control" placeholder="Game Name" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <br>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Category</label>
+            </div>
+            <select name="game[cat]" class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="Puzzle">Puzzle</option>
+              <option value="Quiz">Quiz</option>
+              <option value="Cards">Cards</option>
+              <option value="Arcade">Arcade</option>
+              <option value="Racing">Racing</option>
+              <option value="Sport">Sport</option>
+              <option value="Multiplayer">Multiplayer</option>
+              <option value="JumpAndRun">Jump And Run</option>
+              <option value="Best">Best</option>
+
+            </select>
+          </div>
+
+          <br>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">Image-URL https://</span>
+            </div>
+            <input name="game[img]" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+          </div>
+
+          <br>
+
+
+          <input type="submit" class="btn btn-success btn-lg btn-block">
+
+    
+    </div>
+
+</form>
+
+
+<%- include('./../partials/footer.ejs') %>

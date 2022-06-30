@@ -1,0 +1,18 @@
+<%- include('./../partials/header.ejs') %>
+
+<div class="cards-list">
+    <% games.forEach(function(game){  %>
+      <%  if(game.cat===cat.name) {%>
+      <a href="<%= game.url %>">
+        <div class="card 1">
+        <div class="card_image"> <img src="<%= game.img %>" /> </div>
+        <div class="card_title title-white">
+        </div>
+      </div>
+      </a>
+      <% } %>
+      <% }) %>
+      
+  </div>
+
+  <%- include('./../partials/footer.ejs') %>
